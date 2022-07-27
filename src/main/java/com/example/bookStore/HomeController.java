@@ -36,7 +36,8 @@ public class HomeController {
     public String searchBlog(Model model, @ModelAttribute Inquiry inquiry){
 
        String blogName = inquiry.getSearchString();
-        model.addAttribute("blogs", blogService.searchBlogs(blogName));
+       System.out.println(blogName);
+        model.addAttribute("searchString", blogService.searchBlogs(blogName));
         return "blog";
     }
 

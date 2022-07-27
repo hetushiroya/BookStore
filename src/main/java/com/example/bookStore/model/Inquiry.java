@@ -2,10 +2,10 @@ package com.example.bookStore.model;
 
 public class Inquiry {
 
+
     private String searchString;
 
-    public Inquiry(){
-
+    public Inquiry() {
     }
 
     public Inquiry(String searchString) {
