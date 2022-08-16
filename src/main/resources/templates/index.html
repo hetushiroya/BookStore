@@ -67,7 +67,7 @@
 th:field="*{searchString}"
             -->
             <form th:action="@{/blog}" th:object="${inquiry}" class="search_form" method="post">
-              <input type="text"   class="form-control" placeholder="Search here..."/>
+              <input type="text" th:field="*{searchString}"  class="form-control" placeholder="Search here..."/>
               <button class="" type="submit">
                 <i class="fa fa-search" aria-hidden="true"></i>
               </button>
